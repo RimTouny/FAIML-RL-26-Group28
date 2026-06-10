@@ -1,0 +1,14 @@
+Algorithm Comparison – Hopper-v4
+============================================================================
+Algorithm                Seed   Conv. Ep  Final Avg  Final Std   Train Time
+----------------------------------------------------------------------------
+REINFORCE b=0              20        217      123.5       44.5      20.8min
+REINFORCE b=20             67       2323      307.5       17.8      16.0min
+REINFORCE b=mean           42        426      408.2      111.5      19.2min
+Actor-Critic               67        223      884.5      266.3         3.3h
+
+Notes:
+  Conv. Ep   : First episode where 100-ep avg reward >= 200
+  Final Avg  : 100-ep average reward at end of training
+  Final Std  : 100-ep reward std at end of training
+  Train Time : Total wall-clock training time for best seed

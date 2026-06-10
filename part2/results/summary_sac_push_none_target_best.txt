@@ -1,0 +1,39 @@
+====================================================================================================
+HYPERPARAMETER SEARCH SUMMARY - SAC
+Ranked by: average success rate first, then average return
+Environment type : target
+Strategy         : none
+Timesteps/run    : 500,000
+Evaluation eps   : 50
+====================================================================================================
+Config        Avg success   Avg return  Per-seed results
+------------ ------------ ------------  --------------------------------------------------
+sac_cfg1            94.7%       -0.791  seed42: suc=100.0%, ret=-0.48  seed67: suc=100.0%, ret=-0.62  seed128: suc=84.0%, ret=-1.27
+sac_cfg2            99.3%       -0.466  seed42: suc=98.0%, ret=-0.51  seed67: suc=100.0%, ret=-0.47  seed128: suc=100.0%, ret=-0.42  <-- BEST
+sac_cfg3            89.3%       -0.970  seed42: suc=100.0%, ret=-0.54  seed67: suc=100.0%, ret=-0.51  seed128: suc=68.0%, ret=-1.86
+
+Best config       : sac_cfg2
+Best seed         : 128
+Best model type   : callback_best
+Best return       : -0.415 +/- 0.257
+Best success rate : 100.0%
+
+Best model source : models/sac_sac_cfg2_seed128_target\best\best_model.zip
+Best model copy   : models/sac_push_none_target_best/model_sac_push_none_target_best.zip
+Best CSV copy     : Logs/sac_push_none_target_best/training_sac_push_none_target_best.csv
+Best plot copy    : Logs/sac_push_none_target_best/learning_curve_sac_push_none_target_best.png
+Randomization CSV : N/A
+====================================================================================================
+
+Winning hyperparameters (sac_cfg2):
+  learning_rate                = 0.001
+  buffer_size                  = 500000
+  learning_starts              = 5000
+  batch_size                   = 512
+  tau                          = 0.01
+  gamma                        = 0.98
+  train_freq                   = 1
+  gradient_steps               = 2
+  ent_coef                     = auto
+  target_update_interval       = 1
+

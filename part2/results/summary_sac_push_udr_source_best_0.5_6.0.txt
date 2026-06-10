@@ -1,0 +1,37 @@
+====================================================================================================
+HYPERPARAMETER SEARCH SUMMARY - SAC
+Ranked by: average success rate first, then average return
+Environment type : source
+Strategy         : udr
+Timesteps/run    : 500,000
+Evaluation eps   : 50
+====================================================================================================
+Config        Avg success   Avg return  Per-seed results
+------------ ------------ ------------  --------------------------------------------------
+sac_cfg1            97.3%       -0.599  seed42: suc=94.0%, ret=-0.63  seed67: suc=98.0%, ret=-0.64  seed128: suc=100.0%, ret=-0.53  <-- BEST
+
+Best config       : sac_cfg1
+Best seed         : 128
+Best model type   : callback_best
+Best return       : -0.526 +/- 0.288
+Best success rate : 100.0%
+
+Best model source : models/sac_sac_cfg1_seed128_source_udr_0.5_6.0\best\best_model.zip
+Best model copy   : models/sac_push_udr_source_best/model_sac_push_udr_source_best.zip
+Best CSV copy     : Logs/sac_push_udr_source_best/training_sac_push_udr_source_best.csv
+Best plot copy    : Logs/sac_push_udr_source_best/learning_curve_sac_push_udr_source_best.png
+Randomization CSV : results/udr_mass_samples_0.5_6.0.csv
+====================================================================================================
+
+Winning hyperparameters (sac_cfg1):
+  learning_rate                = 0.0003
+  buffer_size                  = 1000000
+  learning_starts              = 10000
+  batch_size                   = 256
+  tau                          = 0.005
+  gamma                        = 0.98
+  train_freq                   = 1
+  gradient_steps               = 1
+  ent_coef                     = auto
+  target_update_interval       = 1
+

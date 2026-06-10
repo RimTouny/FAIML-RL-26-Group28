@@ -1,0 +1,8 @@
+Algorithm: Actor-Critic
+==================================================
+Seed  20:  Mean =   445.59   Std =   99.69   Best Eval =   455.97   Time = 48.6min
+Seed  42:  Mean =   658.34   Std =  125.68   Best Eval =   590.08   Time = 76.8min
+Seed  67:  Mean =   884.52   Std =  266.32   Best Eval =   846.16   Time = 197.5min
+Seed 128:  Mean =   170.72   Std =   27.53   Best Eval =   188.78   Time = 24.6min
+
+Best seed : 67  (Mean = 884.52, Std = 266.32, Best Eval = 846.16)

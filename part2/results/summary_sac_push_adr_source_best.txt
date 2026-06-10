@@ -1,0 +1,19 @@
+==========================================================================================
+BEST EXISTING RUN SELECTION
+Ranked by: final success_rate_100 first, then final avg_reward_100
+==========================================================================================
+Best group          : sac / adr / source
+Best run tag        : sac_sac_cfg2_seed67_source_adr
+Config              : sac_cfg2
+Seed                : 67
+UDR range           : N/A
+Selected model type : callback_best
+Success rate        : 100.0%
+Mean return         : -0.489
+
+Source model        : models/sac_sac_cfg2_seed67_source_adr/best/best_model.zip
+Canonical model     : models/sac_push_adr_source_best/model_sac_push_adr_source_best.zip
+Canonical CSV       : Logs/sac_push_adr_source_best/training_sac_push_adr_source_best.csv
+Canonical plot      : Logs/sac_push_adr_source_best/learning_curve_sac_push_adr_source_best.png
+Randomization CSV   : results/adr_history.csv
+==========================================================================================

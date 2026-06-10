@@ -1,0 +1,39 @@
+====================================================================================================
+HYPERPARAMETER SEARCH SUMMARY - PPO
+Ranked by: average success rate first, then average return
+Environment type : source
+Strategy         : none
+Timesteps/run    : 500,000
+Evaluation eps   : 50
+====================================================================================================
+Config        Avg success   Avg return  Per-seed results
+------------ ------------ ------------  --------------------------------------------------
+ppo_cfg1            28.0%       -3.132  seed42: suc=34.0%, ret=-2.99  seed67: suc=22.0%, ret=-3.31  seed128: suc=28.0%, ret=-3.10  <-- BEST
+ppo_cfg2            24.0%       -3.292  seed42: suc=38.0%, ret=-2.61  seed67: suc=10.0%, ret=-3.96  seed128: suc=24.0%, ret=-3.30
+ppo_cfg3            18.0%       -3.563  seed42: suc=22.0%, ret=-3.33  seed67: suc=18.0%, ret=-3.47  seed128: suc=14.0%, ret=-3.89
+
+Best config       : ppo_cfg1
+Best seed         : 42
+Best model type   : callback_best
+Best return       : -2.988 +/- 2.297
+Best success rate : 34.0%
+
+Best model source : models/ppo_ppo_cfg1_seed42_source\best\best_model.zip
+Best model copy   : models/ppo_push_none_source_best/model_ppo_push_none_source_best.zip
+Best CSV copy     : Logs/ppo_push_none_source_best/training_ppo_push_none_source_best.csv
+Best plot copy    : Logs/ppo_push_none_source_best/learning_curve_ppo_push_none_source_best.png
+Randomization CSV : N/A
+====================================================================================================
+
+Winning hyperparameters (ppo_cfg1):
+  learning_rate                = 0.0003
+  n_steps                      = 4096
+  batch_size                   = 128
+  n_epochs                     = 15
+  gamma                        = 0.99
+  gae_lambda                   = 0.95
+  clip_range                   = 0.2
+  ent_coef                     = 0.005
+  vf_coef                      = 0.5
+  max_grad_norm                = 0.5
+

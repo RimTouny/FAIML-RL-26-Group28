@@ -1,0 +1,14 @@
+Baseline Sweep – REINFORCE on Hopper-v4
+Seed: 67  |  Episodes: 3000
+==============================================
+  Baseline  Conv. Episode  Final Avg (100ep)
+----------------------------------------------
+         0          Never              119.8
+         5          Never              178.2
+        10          Never              159.6
+        20          Never              161.5
+        50          Never              315.2
+       100          Never              340.3
+       200          Never              391.1
+
+Note: Conv. Episode = first ep where 100-ep avg >= 1000.0

@@ -1,0 +1,8 @@
+Algorithm: REINFORCE – No Baseline (b=0)
+==================================================
+Seed  20:  Mean =   123.46   Std =   44.53   Best Eval =   405.50   Time = 20.8min
+Seed  42:  Mean =   226.91   Std =    6.35   Best Eval =   319.83   Time = 20.6min
+Seed  67:  Mean =   307.83   Std =   39.76   Best Eval =   337.27   Time = 19.4min
+Seed 128:  Mean =   180.27   Std =   10.75   Best Eval =   210.34   Time = 17.8min
+
+Best seed : 20  (Mean = 123.46, Std = 44.53, Best Eval = 405.50)
